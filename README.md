@@ -107,6 +107,34 @@ insert into "library".visitors (name, address, phone, email, registration_date) 
 insert into "library".visitors (name, address, phone, email, registration_date) values ('Lauretta Casson', '5026 Kensington Terrace', '698-319-2067', 'lcasson4@desdev.cn', '2024-06-06');
 ```
 
+#### Visit Records Table
+```sql
+insert into "library".visit_records (visitor_id, visit_date) values (68, '2024-11-02');
+insert into "library".visit_records (visitor_id, visit_date) values (148, '2024-03-15');
+insert into "library".visit_records (visitor_id, visit_date) values (83, '2024-04-20');
+insert into "library".visit_records (visitor_id, visit_date) values (94, '2024-03-02');
+insert into "library".visit_records (visitor_id, visit_date) values (16, '2024-08-08');
+```
+
+#### Borrow Records Table
+```sql
+insert into "library".borrow_records (visit_id, borrow_date, due_date, return_date) values (240, '2024-02-04', '2024-08-03', '2024-05-13');
+insert into "library".borrow_records (visit_id, borrow_date, due_date, return_date) values (17, '2024-05-02', '2023-12-30', '2024-09-10');
+insert into "library".borrow_records (visit_id, borrow_date, due_date, return_date) values (300, '2024-07-09', '2024-07-03', '2024-07-22');
+insert into "library".borrow_records (visit_id, borrow_date, due_date, return_date) values (233, '2023-12-30', '2024-05-25', '2023-12-01');
+insert into "library".borrow_records (visit_id, borrow_date, due_date, return_date) values (178, '2024-04-05', '2024-04-14', '2024-01-14');
+```
+
+#### Borrowed Books Table
+```sql
+insert into "library".borrowed_books (borrow_id, book_id) values (136, 905);
+insert into "library".borrowed_books (borrow_id, book_id) values (54, 287);
+insert into "library".borrowed_books (borrow_id, book_id) values (72, 986);
+insert into "library".borrowed_books (borrow_id, book_id) values (117, 114);
+insert into "library".borrowed_books (borrow_id, book_id) values (130, 495);
+```
+
+
 ### 4. Data Query
 <!-- <INSERT DATA QUERY HERE> -->
 
