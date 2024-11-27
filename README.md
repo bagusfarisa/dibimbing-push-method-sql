@@ -90,6 +90,7 @@ end $$;
 
 ### 3. Data Insertion
 #### Books Table
+![Library Books Table](assets/ss_table_books.png)
 ```sql
 insert into "library".books (title, author, genre, publication_year, available) values ('Polytechnique', 'Shermie Patchett', 'Crime|Drama', 2008, false);
 insert into "library".books (title, author, genre, publication_year, available) values ('Combat dans L''Ile, Le (Fire and Ice)', 'Ingeborg Woolland', 'Drama', 2011, false);
@@ -99,6 +100,7 @@ insert into "library".books (title, author, genre, publication_year, available) 
 ```
 
 #### Visitors Table
+![Library Books Table](assets/ss_table_visitors.png)
 ```sql
 insert into "library".visitors (name, address, phone, email, registration_date) values ('Kingston Balint', '91 Troy Junction', '531-426-3277', 'kbalint0@census.gov', '2023-12-01');
 insert into "library".visitors (name, address, phone, email, registration_date) values ('Noni Scupham', '274 Derek Terrace', '619-591-0822', 'nscupham1@e-recht24.de', '2024-01-01');
@@ -108,6 +110,7 @@ insert into "library".visitors (name, address, phone, email, registration_date) 
 ```
 
 #### Visit Records Table
+![Library Books Table](assets/ss_table_visit_records.png)
 ```sql
 insert into "library".visit_records (visitor_id, visit_date) values (68, '2024-11-02');
 insert into "library".visit_records (visitor_id, visit_date) values (148, '2024-03-15');
@@ -117,6 +120,7 @@ insert into "library".visit_records (visitor_id, visit_date) values (16, '2024-0
 ```
 
 #### Borrow Records Table
+![Library Books Table](assets/ss_table_borrow_records.png)
 ```sql
 insert into "library".borrow_records (visit_id, borrow_date, due_date, return_date) values (240, '2024-02-04', '2024-08-03', '2024-05-13');
 insert into "library".borrow_records (visit_id, borrow_date, due_date, return_date) values (17, '2024-05-02', '2023-12-30', '2024-09-10');
@@ -126,6 +130,7 @@ insert into "library".borrow_records (visit_id, borrow_date, due_date, return_da
 ```
 
 #### Borrowed Books Table
+![Library Books Table](assets/ss_table_borrowed_books.png)
 ```sql
 insert into "library".borrowed_books (borrow_id, book_id) values (136, 905);
 insert into "library".borrowed_books (borrow_id, book_id) values (54, 287);
@@ -135,6 +140,6 @@ insert into "library".borrowed_books (borrow_id, book_id) values (130, 495);
 ```
 
 
-### 4. Data Query
-<!-- <INSERT DATA QUERY HERE> -->
+### 4. Data Query & Insights
 
+<!-- <INSERT DATA QUERY HERE> -->
